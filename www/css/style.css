@@ -1,0 +1,197 @@
+/* Globale Stile */
+body {
+  display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  font-family: Calibri, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('../bilder/Hintergrund.png'); /* Hier den Pfad zum Hintergrundbild einfügen */
+  background-size: cover; /* Skaliere das Hintergrundbild, um den gesamten Bildschirm zu bedecken */
+  color: white; /* Textfarbe für den gesamten Inhalt auf der Seite */
+}
+
+main {
+  flex: 1; /* Der Hauptinhalt dehnt sich aus, um den verfügbaren Platz zwischen dem Header und dem Footer auszufüllen */
+}
+
+/* Header-Stile */
+#logo {
+  width: 100px; /* Größe des Logos */
+  height: auto; /* Automatische Anpassung der Höhe */
+  margin: 20px; /* Platz um das Logo */
+}
+
+/* Formular-Stile */
+form {
+  margin: 20px auto; /* Zentriere das Formular horizontal */
+  max-width: 300px; /* Setze die maximale Breite des Formulars */
+}
+
+input {
+  width: calc(100% - 20px); /* Vollbreite für Benutzername und Passwortfeld abzüglich des Randes */
+  padding: 10px; /* Innenabstand für ein komfortables Erscheinungsbild */
+  margin-bottom: 10px; /* Platz zwischen den Eingabefeldern */
+  border-radius: 5px; /* Abgerundete Ecken */
+  border: 1px solid #ccc; /* Randstil */
+  box-sizing: border-box; /* Berücksichtige den Rand und Padding in der Gesamtbreite */
+  color: black; /* Textfarbe für die Eingabefelder */
+}
+
+input[type="submit"] {
+  width: 100%; /* Vollbreite für die Schaltfläche */
+  padding: 10px; /* Innenabstand für ein komfortables Erscheinungsbild */
+  border-radius: 5px; /* Abgerundete Ecken */
+  border: none; /* Kein Rand */
+  background-color: blueviolet; /* Hintergrundfarbe der Schaltfläche */
+  color: white; /* Textfarbe der Schaltfläche */
+  cursor: pointer; /* Zeige die Hand, wenn über der Schaltfläche */
+}
+
+/* Footer-Stile */
+footer {
+  background-color: transparent; /* Hintergrundfarbe des Fußbereichs */
+  padding: 20px; /* Innenabstand für den Fußbereich */
+  text-align: center; /* Zentriere den Text im Fußbereich */
+  color: white; /* Textfarbe für den Footer */
+  margin-top: auto;
+}
+
+#Authors, #Mail {
+  margin: 5px; /* Platz um die Textelemente */
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #040404;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.dropdown-btn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.sidenav a:hover {
+  color: blueviolet;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+span {
+  font-size:30px;
+  cursor:pointer
+}
+/* CSS-Stile für das Logo oben rechts */
+#logo-container {
+  position: absolute;
+  top: 20px; /* Anpassen des Abstands vom oberen Rand */
+  right: 20px; /* Anpassen des Abstands vom rechten Rand */
+}
+
+/* CSS-Stile für die Willkommensnachricht oben in der Mitte */
+#welcome-message {
+  text-align: center; /* Zentriere den Text horizontal */
+  position: absolute; /* Positioniere das Element absolut */
+  top: 50%; /* Setze den oberen Abstand auf die Hälfte der Höhe des Viewports */
+  left: 50%; /* Setze den linken Abstand auf die Hälfte der Breite des Viewports */
+  transform: translate(-50%, -300%); /* Zentriere das Element genau in der Mitte */
+}
+
+.nav-icon {
+  width: 35px; /* Breite des Icons anpassen */
+  height: auto; /* Höhe automatisch anpassen */
+  margin-right: 35px; /* Abstand zwischen dem Bild und dem Text anpassen */
+  vertical-align: middle; /* Vertikal zentrieren */
+}
+
+/* Stile für die Tabelle */
+table {
+  width: 100%; /* Volle Breite der Tabelle */
+  border-collapse: collapse; /* Randzusammenführung, um ein konsistentes Aussehen zu gewährleisten */
+}
+
+/* Stile für die Tabellenzeilen */
+tr {
+  border-bottom: 1px solid #ddd; /* Untere Grenze für jede Zeile */
+}
+
+/* Stile für die Tabellenzellen */
+td, th {
+  padding: 15px; /* Innenabstand für die Zellen */
+  text-align: center; /* Linksbündige Ausrichtung des Textes */
+}
+
+/* Stile für die Kopfzeile der Tabelle */
+th {
+  background-color: #333; /* Hintergrundfarbe für die Kopfzeile */
+  color: white; /* Textfarbe für die Kopfzeile */
+}
+
+/* Stile für abwechselnde Zeilenfarben */
+tr:nth-child(even) {
+  background-color: transparent; /* Hintergrundfarbe für gerade Zeilen */
+}
+
+/* Stile für den Hover-Effekt */
+tr:hover {
+  background-color: transparent; /* Hintergrundfarbe ändern, wenn Maus über einer Zeile ist */
+}
+
+
+
+
